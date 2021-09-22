@@ -3,17 +3,12 @@
 
 <head>
     <title>Pizza Development</title>
-    <style type="text/css">
+    <style>
         body {
             background: red;
-            color: rgb(45, 45, 45);
-            padding: 10px;
-            font-family: arial;
-        }
-
-        header {
-            font-size: 1.5em;
-            font-weight: bold;
+            color: black;
+            padding: 15px;
+            font-family: fantasy;
         }
 
         #all-contents {
@@ -25,17 +20,17 @@
         nav {
             background: yellow;
             margin: 0 auto;
+            margin-bottom: 20px;
             display: flex;
             padding: 10px;
-            border-bottom: 5px solid black;
         }
 
         h1 {
             display: flex;
             align-items: center;
-            color: black;
+            color: red;
             flex: 1;
-
+            margin: 0;
         }
 
         #nav-ul {
@@ -47,7 +42,7 @@
             padding: 0 10px;
         }
 
-        .nav-a {
+        a {
             text-decoration: none;
             color: black;
         }
@@ -58,40 +53,45 @@
             display: flex;
         }
 
+        .sidebar {
+            margin-right: 25px;
+            padding: 10px;
+        }
+
+        .sidebar-img {
+            width: 200px;
+        }
+
         .content {
             flex: 1;
             padding: 15px;
         }
 
-        /* portfolio styles */
-        .content h1 {
-            color: black;
         }
 
-        #portfolio {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        #portfolio li {
-            background: red;
-            padding: 10px;
-            border-radius: 10px;
-            margin-bottom: 10px;
-        }
-
-        #portfolio li:hover {
-            background: white;
-        }
-
-        #portfolio a {
-            text-decoration: none;
-            color: black;
+        h2,
+        h3 {
+            margin: 0px;
         }
     </style>
 </head>
 
 <body>
+    <div class="content">
+        <h1> Pizza Development </h1>
+        <p> Here at Pizza Development we are making pizza better for everyone.</p>
+        <h2>MORE ABOUT US</h2>
+        <p>Plain old pizza is a thing of the past, here at Pizza Development <br>
+            we want to revolutionize the pizza industry.We have our research <br>
+            teams working around the clock to make pizza better... New crust, <br>
+            toppings, sauce, and so much more! We promise to make your pizza <br>more
+            enjoyable. We are even teaming up with companies such Pizza <br>Hut,
+            Dominoes, and even Papa John's! You to can help our studies by<br> becoming
+            a memeber of the Pizza Society. With this payment of<strong><em>$5</em></strong><br>
+            a month you will get a free sample pizza every month and a hat to<br>
+            to let people know you love pizza just as much as us. Thank you for <br>supporting
+            Pizza development!</p>
+    </div>
     <div id="all-contents">
         <nav>
             <h1>Pizza Development</h1>
@@ -108,7 +108,7 @@
             </ul>
         </nav>
         <main>
-           
+
         </main>
     </div>
 </body>
