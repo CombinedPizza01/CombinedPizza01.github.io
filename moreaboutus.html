@@ -2,115 +2,131 @@
 <html>
 
 <head>
-    <title>Pizza Development</title>
-    <style>
-        body {
-            background: red;
-            color: black;
-            padding: 15px;
-            font-family: fantasy;
-        }
+  <title> Pizza Development </title>
+  <!-- putting things on pizza that don't
+    belong on pizza is what this is about -->
+  <style>
+    body {
+      background: red;
+      color: black;
+      padding: 15px;
+      font-family: fantasy;
+    }
 
-        #all-contents {
-            max-width: 800px;
-            margin: auto;
-        }
+    #all-contents {
+      max-width: 800px;
+      margin: auto;
+    }
 
-        /* navigation menu */
-        nav {
-            background: yellow;
-            margin: 0 auto;
-            margin-bottom: 20px;
-            display: flex;
-            padding: 10px;
-        }
+    /* navigation menu */
+    nav {
+      background: yellow;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      display: flex;
+      padding: 10px;
+    }
 
-        h1 {
-            display: flex;
-            align-items: center;
-            color: red;
-            flex: 1;
-            margin: 0;
-        }
+    h1 {
+      display: flex;
+      align-items: center;
+      color: red;
+      flex: 1;
+      margin: 0;
+    }
 
-        #nav-ul {
-            list-style-image: none;
-        }
+    #nav-ul {
+      list-style-image: none;
+    }
 
-        .nav-li {
-            display: inline-block;
-            padding: 0 10px;
-        }
+    .nav-li {
+      display: inline-block;
+      padding: 0 10px;
+    }
 
-        a {
-            text-decoration: none;
-            color: black;
-        }
+    a {
+      text-decoration: none;
+      color: black;
+    }
 
-        /* main container area beneath menu */
-        main {
-            background: yellow;
-            display: flex;
-        }
+    /* main container area beneath menu */
+    main {
+      background: yellow;
+      display: flex;
+    }
 
-        .sidebar {
-            margin-right: 25px;
-            padding: 10px;
-        }
+    .sidebar {
+      margin-right: 25px;
+      padding: 10px;
+    }
 
-        .sidebar-img {
-            width: 200px;
-        }
+    .sidebar-img {
+      width: 200px;
+    }
 
-        .content {
-            flex: 1;
-            padding: 15px;
-        }
+    .content {
+      flex: 1;
+      padding: 15px;
+    }
 
-        }
+    #interests {
+      border: 4px black;
+      padding: 8px;
+      width: fit-content;
+    }
 
-        h2,
-        h3 {
-            margin: 0px;
-        }
-    </style>
+    h2,
+    h3 {
+      margin: 0px;
+    }
+  </style>
 </head>
 
 <body>
-    <div class="content">
+  <div id="all-contents">
+    <nav>
+      <h1>Pizza Development</h1>
+      <ul id="nav-ul">
+        <li class="nav-li">
+          <a href="index.html"> Home </a>
+        </li>
+        <li class="nav-li">
+          <a href="portfolio.html"> Portfolio </a>
+        </li>
+        <li class="nav-li">
+          <a href="moreaboutus.html">More About Us</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- sidebar section -->
+      <div class="sidebar">
+        <img class="sidebar-img"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqbJlsMFcY1qbaILvAYcNO7FXXsDCMjAC6BI7e07eTa4lV28GXECFBXlOaz1FwPeUmXdU:https://www.gourmandize.com/media/p1190164c_crop.jpg/rh/candy-corn-pizza.jpg&usqp=CAU">
+      </div>
+      <!-- content section -->
+      <div class="content">
+        <!-- Interests section -->
+        <div id="interests">
+            
+        </div>
         <h1> Pizza Development </h1>
         <p> Here at Pizza Development we are making pizza better for everyone.</p>
         <h2>MORE ABOUT US</h2>
         <p>Plain old pizza is a thing of the past, here at Pizza Development <br>
-            we want to revolutionize the pizza industry.We have our research <br>
-            teams working around the clock to make pizza better... New crust, <br>
-            toppings, sauce, and so much more! We promise to make your pizza <br>more
-            enjoyable. We are even teaming up with companies such Pizza <br>Hut,
-            Dominoes, and even Papa John's! You to can help our studies by<br> becoming
-            a memeber of the Pizza Society. With this payment of<strong><em>$5</em></strong><br>
-            a month you will get a free sample pizza every month and a hat to<br>
-            to let people know you love pizza just as much as us. Thank you for <br>supporting
-            Pizza development!</p>
-    </div>
-    <div id="all-contents">
-        <nav>
-            <h1>Pizza Development</h1>
-            <ul id="nav-ul">
-                <li class="nav-li">
-                    <a class="nav-a" href="index.html">Home</a>
-                </li>
-                <li class="nav-li">
-                    <a class="nav-a" href="portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-li">
-                    <a href="moreaboutus.html">More About Us</a>
-                </li>
-            </ul>
-        </nav>
-        <main>
-
-        </main>
-    </div>
+          we want to revolutionize the pizza industry.We have our research <br>
+          teams working around the clock to make pizza better... New crust, <br>
+          toppings, sauce, and so much more! We promise to make your pizza <br>more
+          enjoyable. We are even teaming up with companies such Pizza <br>Hut,
+          Dominoes, and even Papa John's! You to can help our studies by<br> becoming
+          a memeber of the Pizza Society. With this payment of<strong><em>$5</em></strong><br>
+          a month you will get a free sample pizza every month and a hat to<br>
+          to let people know you love pizza just as much as us. Thank you for <br>supporting
+          Pizza development!</p>
+      </div>
+    </main>
+  </div>
 </body>
 
 </html>
