@@ -40,7 +40,7 @@
         createCollectable(type.db, 50, 400, 6, 0.7);
         createCollectable(type.db, 90, 400, 6, 0.7);
         createCollectable(type.steve, 750, 260, 6, 0.7)
-        createCollectable(type.kennedi, 50, 120)
+        createCollectable(type.kennedi, 50, 170)
         
         
         // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
