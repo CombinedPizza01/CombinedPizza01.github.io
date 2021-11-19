@@ -63,8 +63,8 @@
 			
 			// TODO 2 - Variable declarations 
 			var positionX = 0;
-
-			
+			var boxScore = 0
+			var iAmSpeedX = 0
 			/* 
 			This Function will be called 20 times/second. Each time it is called,
 			it should move the Box to a new location. If the box drifts off the screen
@@ -75,10 +75,12 @@
 				moveBoxTo(positionX);
 			
 			if (positionX < boardWidth){
-				positionX = positionX + 5;
+				positionX = positionX + iAmSpeedX;
 			} else if (positionX > boardWidth){
 			 console.log("edge of board")
 				positionX = 0
+				changeBoxText(boxScore = 0)
+				iAmSpeedX = 0
 			}
 			
 		}
@@ -91,7 +93,8 @@
 			function handleBoxClick() {
 				console.log("box is clicked")
 				positionX = (Math.random()* 1300)
-
+				changeBoxText(boxScore = boxScore + 1)
+				iAmSpeedX = iAmSpeedX + 1
 			};
 		})();
 	</script>
