@@ -8,7 +8,7 @@
 		.box {
 			width: 60px;
 			height: 60px;
-			font-size: 300%;
+			font-size: 175%;
 			background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsgEvwm2NF9HkjYzeRQ_p_Dl7YNFmL7Z6wtLbOBlK7OSA8OlabyoN8vZvmxyIdN9rIRo4:https://www.creativefabrica.com/wp-content/uploads/2020/04/23/single-slice-italian-pizza-cartoon-flat-Graphics-3933838-1.jpg&usqp=CAU);
 			background-position: -15px;
 			background-size: 90px;
@@ -33,7 +33,7 @@
 </head>
 <body class="board">
 	<!-- HTML for the box -->
-	<div class="box">?</div>
+	<div class="box">Click Me</div>
 	<script>
 		(function(){
 			'use strict'
@@ -71,7 +71,7 @@
 			// TODO 2 - Variable declarations 
 			var positionX = 0;
 			var boxScore = 0
-			var iAmSpeedX = 1
+			var iAmSpeedX = 0
 			/* 
 			This Function will be called 20 times/second. Each time it is called,
 			it should move the Box to a new location. If the box drifts off the screen
@@ -103,7 +103,7 @@
 				//if (iAmSpeedX = 0){
 				//	iAmSpeedX = iAmSpeedX + 1
 			//	} else 
-				if (iAmSpeedX > 0) {
+				if (iAmSpeedX >= 0) {
 					iAmSpeedX = iAmSpeedX + 1
 				} else if (iAmSpeedX < 0) {
 					iAmSpeedX = iAmSpeedX - 1
