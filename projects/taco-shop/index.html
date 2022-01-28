@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pizza Stand</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+            #menu, #take-order {
+                display: flex;
+                flex-direction: row;
+            }
+
+            #take-order > p {
+                padding-right: 10px;
+            }
+
+            .menu-item {
+                border: 3px solid black;
+                background-color: yellow;
+            }
+
+            .menu-item > h4,
+            .menu-item > img {
+                padding: 10px;
+                padding-bottom: 5px;
+            }
+
+            img {
+                width: 250px;
+            }
+            body {
+                background-color: red;
+            }
+            button {
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="all-contents">
+            <nav>
+                <h1>Pizza Stand</h1>
+                <div id="take-order">
+                    <p>When you're ready to place your order, click here: </p>
+                    <button>Place Order</button>
+                </div>
+            </nav>
+            <main>
+                <h3>Menu (Sold in Slices)</h3>
+                <div id="menu">
+                    <div id="dorito-pizza" class="menu-item">
+                        <h4> #1 - Dorito Pizza</h4>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4_iI2i3nABaeZDVFqJ4p2ayC7CCr0xTtsuw:https://static1.therecipeimages.com/wordpress/wp-content/uploads/2018/11/pizzahut3.jpg&usqp=CAU">
+                        <h4>2.00 <em>plus tax</em> </h4> 
+                    </div>
+                    <div id="sardine-green" class="menu-item">
+                        <h4>#2 - Sardine and Green</h4>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv5LitolMwnjruz9Db8-fep86P_n76Zax76A:https://ak.jogurucdn.com/media/image/p15/media_gallery-2015-11-20-6-mockba_pizza_b913a0c9805595cb22591c3cb02c71b2.jpg&usqp=CAU">
+                        <h4>7.50 <em>plus tax</em></h4>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <script>
+            $("button").on('click', takeOrder);
+            function takeOrder() {
+               var orderNumber = prompt ('What number you want')
+                if (orderNumber === '1'){
+                    alert ("That'll be $2.20")
+                } else if (orderNumber === '2') {
+                    alert ("That'll be $8.25")
+                }
+            }
+        </script>
+    </body>
+</html>
