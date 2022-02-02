@@ -75,32 +75,27 @@
             var crustType = prompt("What crust you want: thin, pan, or stuffed")
             var total = 0
             if (orderNumber === '1') {
-                total += 0
+                total += 2.25
             } else if (orderNumber === '2') {
                 total += 8.25
-            }
+            } 
 
             if (crustType === 'thin') {
                 total += 1
+                alert ("You ordered a number " + orderNumber + " with " + crustType + " crust for a total of $" + total)
             } else if (crustType === 'pan') {
                 total += 1.50
+                alert ("You ordered a number " + orderNumber + " with " + crustType + " crust for a total of $" + total)
             } else if (crustType === 'stuffed') {
-                total += 0
-            }
-
-            if (orderNumber !== '1') {
-                alert ("That's not an option stop wasting my time and try again")
-            } else if (orderNumber !== '2') {
-                alert ("That's not an option stop wasting my time and try again")
-            } else if (crustType !== 'pan') {
-                alert ("That's not an option stop wasting my time and try again")
-            } else if (crustType !== 'thin') {
-                alert ("That's not an option stop wasting my time and try again")
-            } else if (crustType !== 'stuffed') {
-                alert ("That's not an option stop wasting my time and try again")
+                total += 3
+                alert ("You ordered a number " + orderNumber + " with " + crustType + " crust for a total of $" + total)
             } else {
-                alert("You ordered a number " + orderNumber + " with " + crustType + " crust for a total of $" + total)
+                alert ("That's not an option so you get what you get")
+                total += 4
+                alert ("You got a number 1 with pan crust for a total of $" + total)
             }
+            // alert ("You ordered a number " + orderNumber + " with " + crustType + " crust for a total of $" + total)
+            
         }
 
 
