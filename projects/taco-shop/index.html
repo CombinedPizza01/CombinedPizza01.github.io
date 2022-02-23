@@ -57,13 +57,19 @@
                     <h4> #1 - Dorito Pizza</h4>
                     <img
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4_iI2i3nABaeZDVFqJ4p2ayC7CCr0xTtsuw:https://static1.therecipeimages.com/wordpress/wp-content/uploads/2018/11/pizzahut3.jpg&usqp=CAU">
-                    <h4>2.00 <em>plus tax</em> </h4>
+                    <h4>$2.00 <em>plus tax</em> </h4>
                 </div>
                 <div id="sardine-green" class="menu-item">
                     <h4>#2 - Sardine and Green</h4>
                     <img
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv5LitolMwnjruz9Db8-fep86P_n76Zax76A:https://ak.jogurucdn.com/media/image/p15/media_gallery-2015-11-20-6-mockba_pizza_b913a0c9805595cb22591c3cb02c71b2.jpg&usqp=CAU">
-                    <h4>7.50 <em>plus tax</em></h4>
+                    <h4>$7.50 <em>plus tax</em></h4>
+                </div>
+                <div id="mcdonalds-pizza" class="menu-item">
+                    <h4>#3 - McDonalds Pizza</h4>
+                    <img
+                        src="https://cms.hostelbookers.com/hbblog/wp-content/uploads/sites/3/2012/07/McDonalds-Pizza.jpg">
+                    <h4>$3.50 <em>plus tax</em></h4>
                 </div>
             </div>
         </main>
@@ -74,10 +80,12 @@
             var orderNumber = prompt('What number you want')
             var crustType = prompt("What crust you want: thin, pan, or stuffed")
             var total = 0
-            if (orderNumber === '1') {
+            if (orderNumber === "1") {
                 total += 2.25
-            } else if (orderNumber === '2') {
+            } else if (orderNumber === "2") {
                 total += 8.25
+            } else if (orderNumber === "3") {
+                total += 3.85
             } else {
                 alert ("that's not a right number so good luck")
                 orderNumber = '1'
